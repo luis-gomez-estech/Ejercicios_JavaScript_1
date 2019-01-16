@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 7</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+	var numero1 = prompt("Escribe el primer numero"); // creamos variables
+	var numero2 = prompt("Escribe el segundo numero");
+	var numero3 = prompt("Escribe el segundo numero");
+
+
+	if (numero1>numero2&&numero1>numero3) {
+  document.write("El numero " + (parseInt(numero1) + ", es el número mayor de los tres numeros introducidos que han sido " + parseInt(numero1) + ", " + parseInt(numero2) + ", " + parseInt(numero3)));
+	}
+
+    else if (numero2>numero3&&numero2>numero3) {
+  document.write("El numero " + (parseInt(numero2) + ", es el número mayor de los tres numeros introducidos que han sido " + parseInt(numero1) + ", " + parseInt(numero2) + ", " + parseInt(numero3)));
+
+   }
+
+      else if (numero3>numero1&&numero3>numero2) {
+  document.write("El numero " + (parseInt(numero3) + ", es el número mayor de los tres numeros introducidos que han sido " + parseInt(numero1) + ", " + parseInt(numero2) + ", " + parseInt(numero3)));
+
+
+
+} else {
+
+  greeting = "day";
+
+} 
+
+		document.write(greeting);
+	
+		
+
+	
+	// Aqui se ponen parseInt para convertir las variables en   valores  numéricos, ya que el texto introducido (los numeros que introducimos) son string, por tanto, con parseInt los convertimos a numeros. Preguntar si esto es asi???
+
+	
+   	</script>
+
+   	<!--
+
+else if(parseInt(numero2)>parseInt(numero1) && parseInt(numero2)>parseInt(numero3)){
+		document.write("El numero " + (parseInt(numero2) + " es el mayor de los tres numeros introducidos que son " + parseInt(numero1) + parseInt(numero2)+ parseInt(numero3)));
+	else if(parseInt(numero3)>parseInt(numero1) && parseInt(numero3)>parseInt(numero2)){
+		document.write("El numero " + (parseInt(numero3) + " es el mayor de los tres numeros introducidos que son " + parseInt(numero1) + parseInt(numero2)+ parseInt(numero3)));
+	} 
+-->
+	
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 11</title>
+</head>
+<body>
+
+
+	<!--  Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales -->
+
+	<script type="text/javascript">
+		
+		var frase = prompt("Introduce una frase");
+
+		// Aqui hice el codigo que te enseñé en clase pero lo he trasformado conforme la idea que me diste en todo esto
+
+		var contA= 0; // Aqui creo una variable contador para la letra "a" que inicia desde cero y despues se irá incrementando con contA += 1 si hay alguna "a" (el uno indica que se incrementa de uno en uno)
+		var contE= 0; // Aqui creo una variable contador para la letra "e" que inicia desde cero y despues se irá incrementando con contA += 1, si hay alguna "e"
+		var contI= 0;
+		var contO= 0;
+		var contU= 0;
+
+		//Ahora creo un for que recorra la frase desde el digito primero (por eso ponemos 0 y no 1, al igual que en java) y la recorrera todos sus digitos con length.
+
+        for(var i=0;i<frase.length;i++){
+
+			//Si en ese recorrido, i es igual a "a", la variable contA aunmenta un valor y asi para cada vez que encuentre una "a" y con la variable totalA guardo ese valor, en caso de que no tenga nnguna "a" , entonces totalA será cero
+
+			if(frase[i]=="a") {
+
+				contA += 1;	// Aqui guardo si tiene alguna vocal "a". Si no tiene valdrá entonces cero, sino el valor de "a" que haya	
+			}
+
+			if(frase[i]=="e") {
+
+				contE += 1;		
+			}
+
+			if(frase[i]=="i") {
+
+				contI += 1;			
+			}
+
+			if(frase[i]=="o") {
+
+				contO += 1;						
+			}
+
+			if(frase[i]=="u") {
+
+				contU += 1;			
+			}
+		}
+
+		// Y ahora imprimo el valor de la suma de todos los contadores
+
+		document.write("La frase " + frase + " tiene " + (contA+contE+contI+contO+contU) + " vocal/es.");
+
+		
+
+
+	</script>	
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 15</title>
+</head>
+<body>
+
+	<!--Escribir un programa que escriba en pantalla los divisores de un número dado. Es decir, si tenemos a y b, entonces b sera divisible de a siempre que el resto de la division sea 0 (a%b=0) -->
+	
+	<script type="text/javascript">
+		
+		var numero = prompt("Introduce un numero"); // Creo una variable que recojoi con prompt
+
+		var i; // creo una variable para usarla con for
+
+		//Ahora creo el for el cual va a comprobar con todos los numeros desde uno hasta el numero introducido, y despues con un if comprueba que si el resto de numero/i es igual a cero entonces mostrará en el document.write(), que numeros son, separados por comas
+
+		for (var i=1;i<numero;i++) { //
+
+			if (numero%i==0){
+				document.write(i,", ");
+			}
+		}
+
+	</script>
+
+</body>
+</html>

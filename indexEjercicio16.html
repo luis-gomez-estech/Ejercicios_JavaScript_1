@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 16</title>
+</head>
+<body>	
+
+	<!-- Escribir un programa que escriba en pantalla los divisores comunes de dos números dados -->	
+
+	<script type="text/javascript">
+		
+		var numero1 = prompt("Introduce el primer número");
+		var numero2 = prompt("Introduce el segundo número");
+
+		// Para calcular los divisores de 2 numeros, operamos con el numero menor, si hemos introducido 12 y 18, usaremos el numero 12
+
+		var numeroMenor; // Creamos la variable que recogera que numero es menor
+		var i;// Creamos la variabe para usarla despues con el for
+
+		// Por tanto primero comprobamos que numero es menor con un if,
+
+		if (numero1>numero2) {
+		numeroMenor=numero2;
+		} else {
+		numeroMenor = numero1;
+		}
+
+		// Despues con un for, recorremos desde el valor 1 hasta el valor del numeroMenor, y con un if dentro de el, vamos diviendo el numero1 y el numero2 entra cada valor de i, 12/1,12/2, hasta 12/12 y 18/1, 18/2 etc, y si en alguna de las posiciones de i, el resto es igual a cero, entonces IMPRIMIMOS los valores de i en los que el resto es cero tanto para el numero1 como para el numero2 
+
+		for (i=1;i<numeroMenor;i++) {
+		if (numero1%i==0&&numero2%i==0) {
+		document.write(i,", ");
+		}
+		}
+
+	</script>
+
+</body>
+</html>

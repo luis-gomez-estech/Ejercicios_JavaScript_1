@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 14</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var numero = prompt("Introduce un numero");
+
+		    if(numero%2==0||numero%3==0||numero%5==0||numero%7==0){ // priemro compruebo si es divisible por alguno de los 4, en caso de que no lo sea, ya nos dirá que no es por ninguno, pero en caso de que sea divisible por alguno, entonces pasará al siguiente if
+
+		    // Ahora compruebo por cual de ellos es divisible
+		    
+			if(numero%2==0){
+				document.write("El numero " + numero + " es divisible por 2. ");
+			}
+
+			if (numero%3==0){
+				document.write("El numero " + numero + " es divisible por 3. ");
+			}
+			
+			if (numero%5==0){
+				document.write("El numero " + numero + " es divisible por 5. ");
+			}
+			if (numero%7==0){
+				document.write("El numero " + numero + " es divisible por 7. ");
+			}
+			
+			} else {
+				document.write("El numero " + numero + " no es divisible por ninguno de los 4 numeros (2,3,5,7)");
+			}
+
+	</script>
+	
+</body>
+</html>

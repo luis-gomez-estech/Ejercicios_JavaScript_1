@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 9</title>
+</head>
+<body>
+
+	<!-- Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a -->
+
+	<script type="text/javascript">
+		
+		var frase = prompt("Introduce una frase");
+
+		var cuenta = 0; // Aqui creo una variable contador que inicia desde cero y despues se irá incrementando si hay alguna "a"
+
+		//Ahora creo un for que recorra la frase
+
+		for(var i=0;i<frase.length;i++){
+
+			//Si en ese recorrido, i es igual a "a", la variable cuenta aunmenta un valor y asi para cadsa vez que encuentre una "a"
+
+			if(frase[i]=="a") {
+				cuenta += 1;				
+			}
+		}
+
+		document.write("La frase " + frase + " tiene " + cuenta + " letras a ");
+
+	</script>	
+	
+</body>
+</html>

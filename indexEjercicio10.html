@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 10</title>
+</head>
+<body>
+
+	<!--  Escribe un programa que pida una frase y escriba las vocales que aparecen -->
+
+	<script type="text/javascript">
+		
+		var frase = prompt("Introduce una frase");
+
+		// Aqui hice el codigo que te enseñé en clase pero lo he trasformado conforme la idea que me diste en todo esto
+
+		var contA= 0; // Aqui creo una variable contador para la letra "a" que inicia desde cero y despues se irá incrementando con contA += 1 si hay alguna "a" (el uno indica que se incrementa de uno en uno)
+		var contE= 0; // Aqui creo una variable contador para la letra "e" que inicia desde cero y despues se irá incrementando con contA += 1, si hay alguna "e"
+		var contI= 0;
+		var contO= 0;
+		var contU= 0;
+
+		//Ahora creo un for que recorra la frase desde el digito primero (por eso ponemos 0 y no 1, al igual que en java) y la recorrera todos sus digitos con length.
+
+        for(var i=0;i<frase.length;i++){
+
+			//Si en ese recorrido, i es igual a "a", la variable contA aunmenta un valor y asi para cada vez que encuentre una "a". En caso de que no tenga nnguna "a" , entonces contA será cero
+
+			if(frase[i]=="a") {
+
+				contA += 1;	// Aqui guardo si tiene alguna vocal "a". Si no tiene valdrá entonces cero, sino el valor de "a" que haya				
+			}
+
+			if(frase[i]=="e") {
+
+				contE += 1;							
+			}
+
+			if(frase[i]=="i") {
+
+				contI += 1;							
+			}
+
+			if(frase[i]=="o") {
+
+				contO += 1;							
+			}
+
+			if(frase[i]=="u") {
+
+				contU += 1;						
+			}
+		}
+
+	
+ 		if(contA>=1){
+ 			determinaQueVocales() + document.write(contA + " vocal/es A. ");			
+		}
+
+		if(contE>=1){
+			determinaQueVocales() + document.write(contE + " vocal/es E. ");	
+		}
+
+		if(contI>=1){
+			determinaQueVocales() + document.write(contI + " vocal/es I. ");	
+		}
+
+		if(contO>=1){
+			determinaQueVocales() + document.write(contO + " vocal/es O. ");	
+		}
+
+		if(contU>=1){
+			determinaQueVocales() + document.write(contU + " vocal/es U. ");	
+		}
+
+		if (contA==0&&contE==0&&contI==0&&contO==0&&contU==0) {
+			document.write("La frase " + frase + " no tiene ninguna vocal ")
+		}
+
+
+		function determinaQueVocales() {
+
+				document.write("La frase " + frase + " tiene ")
+
+		}
+
+
+
+	</script>	
+
+		<!-- PRIMER INTENTO ANTES DE LA MODIFICACION QUE ME HAS SUGERIDO EN CLASE
+
+		for(var j=0;j<frase.length;j++){
+
+			//Si en ese recorrido, i es igual a "a", la variable cuenta aunmenta un valor y asi para cadsa vez que encuentre una "a"
+
+			if(frase[j]=="a") {
+                document.write("La frase " + frase + " tiene la vocal " + a + ".")
+			}
+
+			if(frase[j]=="e") {
+                document.write("La frase " + frase + " tiene la vocal " + e + ".")
+			}
+			if(frase[j]=="i") {
+                document.write("La frase " + frase + " tiene la vocal " + i + ".")
+			}
+			if(frase[j]=="o") {
+                document.write("La frase " + frase + " tiene la vocal " + o + ".")
+			}
+			if(frase[j]=="u") {
+                document.write("La frase " + frase + " tiene la vocal " + u + ".")
+			}
+		}
+
+		-->
+	
+	
+</body>
+</html>

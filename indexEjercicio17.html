@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 17</title>
+</head>
+<body>
+	
+    <!-- Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o la unidad) -->
+
+    <!-- Este ejercicio lo he hecho con el mismo planteamiento que el que hicimos para java, pero sustituyendo los comandos de java por los de js -->
+   
+    <!-- Un numero primo es un numero impar y ademas, solo puede ser divisible entre 1 y él mismo, para que el resto sea cero. -->
+
+    <script type="text/javascript">
+
+     
+    var numero = prompt("Escribe un número");
+    
+    var i; // Creamos variabla para usarla con el for
+
+     // Si suponemos que el numero introducido es 15, aqui le decimos que divida 15/2, 15/3, 15/,4  y asi hasta 15/14 ya que i<numero por tanto i llega hasta 14, 
+        // por lo que si en una de esas divisiones encuentra una en el que el resto sea igual a 0, entonces es ese numero no será primo. Ya que el resto de:
+        // 15%1!=0, 15%2!=0, pero el resto de 15%3=0, ya si es igual a cero por tanto ese numero no es primo, ya que para ser primo solo puede ser dividivo por el mismo o por 1 (para que el resto sea cero) pero en el caso del 15 si lo dividimos por 3, el resto tambien es cero, o si lo dividimos entre 5 su resto tambien seria cero, por tanto no es primo
+
+    // Por tanto, primero suponemos que es primo de entrada con una variable que diga q mientras no se diga lo contrario, el numero es primo,
+
+    var primo=true;
+
+     // Ahora recorremos el for y si encuentra que una de las divisiones del numero/i , su resto es igual a cero, entonces diga que es false
+
+    for (var i=2;i<numero;i++) {
+
+         if (numero%i==0) { // Si          
+            primo =false;
+         } 
+         
+    }
+
+    // Aqui imprimimor el resultado del boolean
+
+    if (primo==true)
+         document.write("El numero " + numero + " es primo.");
+    else
+         document.write("El numero " + numero + " no es primo.");
+     
+
+    </script>
+         
+
+</body>
+</html>
+
+
+
