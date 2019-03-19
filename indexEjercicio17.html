@@ -27,7 +27,9 @@
 
     var primo=true;
 
-     // Ahora recorremos el for y si encuentra que una de las divisiones del numero/i , su resto es igual a cero, entonces diga que es false
+      // Ahora recorreos con un for haciendo las divisiones de el numero introducido por teclado dividido por cada valor de i desde 2 hasta el numero introducido por teclado
+        // Si en una de esas veces se cumple que el numero introducido dividivo por un valor de i, su resto es cero, entonces la variable primo cambia de valor a false,
+        // pero si en el recorrido no ha ourrido que el resto sea cero con ningun valor de i, entonces sirá que primo es igual a true
 
     for (var i=2;i<numero;i++) {
 
@@ -37,8 +39,8 @@
          
     }
 
-    // Aqui imprimimor el resultado del boolean
-
+      // Ahora con  un if decimos que si prime=true, que imprima que si es primo, pero si prime es false, imprimira que no es primo
+      
     if (primo==true)
          document.write("El numero " + numero + " es primo.");
     else
